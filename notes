@@ -1,0 +1,47 @@
+Boid
+
+values:
+-location
+-velocity
+-acceleration
+
+functions:
+-calc_acceleration
+-calc_velocity
+-calc_location
+
+calc_acceleration
+-get_seperation
+-get_alignment
+-get_cohesion
+-sum these to get acceleration
+
+Then calculate velocity from acceleration and location from velocity
+This all happens in an "update" cycle of a loop
+
+Initialize:
+
+- Create boids with given locatons
+- Start the loop
+
+Loop:
+	Update: - calcAcceleration - calcVelocity - calcLocation
+	Draw: - for x in boids: x.draw()
+
+
+
+- Initialize
+- Loop
+	- Update
+		- calcAcceleration
+			- getSeparation
+			- getAlignment
+			- getCohesion
+		- calcVelocity
+		- calcLocation
+	- Draw
+		
+
+
+
+
